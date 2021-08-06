@@ -1,0 +1,13 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.top_page_image{
+    width: 100%;
+    height: 450px;
+}
+
+.top_page_image img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

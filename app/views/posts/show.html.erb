@@ -1,0 +1,11 @@
+<h3>プロダクト詳細</h3>
+<div class="post">
+　<%= image_tag @post.image_url, size: "250x200" if @post.image? %>
+  <p><%= @post.title %></p>
+  <a href="@post.link"><%= @post.link %></a>
+  <p><%= @post.period %></p>
+  <p><%= @post.creator %></p>
+  <p><%= @post.detail%></p>
+</div>
+
+<%= link_to "プロダクト一覧に戻る", posts_path %>

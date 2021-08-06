@@ -1,0 +1,34 @@
+<h3>新規プロダクト</h3>
+<%= form_for @post do |f| %>
+  <div class="field">
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+</div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title, :size => 140 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link, :size => 200 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :period %>
+    <%= f.text_field :period, :size => 10 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :creator %>
+    <%= f.text_field :creator, :size => 10 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :detail %>
+    <%= f.text_field :detail, :size => 400 %>
+  </div>
+  <%= f.submit "投稿する" %>
+<% end %>
+<%= link_to "プロダクト一覧に戻る", posts_path %>
